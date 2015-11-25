@@ -14,6 +14,8 @@
 		BABAF2071C06133200523B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABAF2051C06133200523B0F /* LaunchScreen.storyboard */; };
 		BABAF2121C06133300523B0F /* CustomPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABAF2111C06133300523B0F /* CustomPinTests.swift */; };
 		BABAF21D1C06133300523B0F /* CustomPinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABAF21C1C06133300523B0F /* CustomPinUITests.swift */; };
+		BABAF22D1C06138100523B0F /* CustomMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABAF22C1C06138100523B0F /* CustomMKAnnotationView.swift */; };
+		BABAF22F1C06141F00523B0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BABAF22E1C06141F00523B0F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BABAF2181C06133300523B0F /* CustomPinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABAF21C1C06133300523B0F /* CustomPinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinUITests.swift; sourceTree = "<group>"; };
 		BABAF21E1C06133300523B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABAF22C1C06138100523B0F /* CustomMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMKAnnotationView.swift; sourceTree = "<group>"; };
+		BABAF22E1C06141F00523B0F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABAF22F1C06141F00523B0F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		BABAF1F01C06133200523B0F = {
 			isa = PBXGroup;
 			children = (
+				BABAF22E1C06141F00523B0F /* MapKit.framework */,
 				BABAF1FB1C06133200523B0F /* CustomPin */,
 				BABAF2101C06133300523B0F /* CustomPinTests */,
 				BABAF21B1C06133300523B0F /* CustomPinUITests */,
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				BABAF1FC1C06133200523B0F /* AppDelegate.swift */,
+				BABAF22C1C06138100523B0F /* CustomMKAnnotationView.swift */,
 				BABAF1FE1C06133200523B0F /* ViewController.swift */,
 				BABAF2001C06133200523B0F /* Main.storyboard */,
 				BABAF2031C06133200523B0F /* Assets.xcassets */,
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABAF22D1C06138100523B0F /* CustomMKAnnotationView.swift in Sources */,
 				BABAF1FF1C06133200523B0F /* ViewController.swift in Sources */,
 				BABAF1FD1C06133200523B0F /* AppDelegate.swift in Sources */,
 			);
@@ -397,6 +405,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CustomPin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabor-Csontos.CustomPin";
@@ -408,6 +420,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CustomPin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabor-Csontos.CustomPin";
